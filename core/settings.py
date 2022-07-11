@@ -8,6 +8,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'dashboard'
+LOGOUT_REDIRECT_URL = 'frontpage'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -16,7 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'apps.main'
+    'apps.main',
+    'apps.dashboard',
 ]
 
 MIDDLEWARE = [
